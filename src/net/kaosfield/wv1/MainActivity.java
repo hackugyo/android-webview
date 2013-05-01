@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 		webView = (WebView) findViewById(R.id.webview);
 		WebSettings webSettings = webView.getSettings();
 		webSettings.setJavaScriptEnabled(true);
-		webView.setWebViewClient(new MyWebViewClient());
+		webView.setWebChromeClient(new MyWebViewClient());
 		webView.loadUrl("http://google.com");
 	}
 

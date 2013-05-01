@@ -1,9 +1,9 @@
 package net.kaosfield.wv1;
 
+import android.webkit.WebChromeClient;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
-class MyWebViewClient extends WebViewClient {
+class MyWebViewClient extends WebChromeClient {
 
 	public boolean shouldOverrideUrlLoading(WebView view, String url) {
 		return false;
